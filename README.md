@@ -1,57 +1,70 @@
-🕸️ Web Scraper Netshoes
-📌 Descrição
+# 🕸️Web Scraper Netshoes
+
+## 📌 Descrição
 
 Este projeto consiste em um web scraper desenvolvido em Node.js com o objetivo de extrair informações de produtos do site Netshoes.
 
 Os dados coletados incluem:
 
-Título do produto
-Preço
-Imagem
-Descrição (quando disponível)
-🚀 Tecnologias utilizadas
-Node.js
-Puppeteer
-⚙️ Como executar o projeto
-🔹 1. Clone o repositório
+- Título do produto
+- Preço
+- Imagem
+- Descrição (quando disponível)
+
+## 🚀 Tecnologias utilizadas
+- Node.js
+- Puppeteer
+
+## ⚙️ Como executar o projeto
+- 🔹 1. Clone o repositório
 git clone SEU_REPOSITORIO
 cd webscraper-netshoes
-🔹 2. Instale as dependências
-npm install
 
-👉 Isso instalará automaticamente o Puppeteer e demais bibliotecas necessárias.
+- 🔹 2. Instale as dependências
+  **npm install**
 
-🔹 3. Execute o scraper
-node scraper.js "URL_DO_PRODUTO"
-🧪 Exemplo de uso
+  *Isso instalará automaticamente o Puppeteer e demais bibliotecas necessárias.*
+
+
+- 🔹 3. Execute o scraper
+**| node scraper.js "URL_DO_PRODUTO" |**
+
+### 🧪 Exemplo de uso
+~~~NODE
 node scraper.js "https://www.netshoes.com.br/tenis-nike-revolution-6-masculino-preto+branco-2IC-5001-006"
-📊 Saída
+~~~
+
+### 📊 Saída
 
 Os dados extraídos serão exibidos no terminal e também salvos no arquivo:
+<br>`output.json`
 
-output.json
-
-Exemplo de saída:
-
+**Exemplo de saída:**
+~~~NODE
 {
   "titulo": "Tênis Nike Revolution 6 Next Nature Feminino - Preto",
   "preco": "R$ 303,99 no Pix",
   "imagem": "https://...",
   "descricao": "Descrição não disponível"
-}
-⚠️ Observações
-O site utiliza carregamento dinâmico (JavaScript), o que pode impactar a extração de alguns dados.
-A descrição do produto pode não estar sempre disponível ou pode variar dependendo da estrutura da página.
+  }
+~~~
+  
+### ⚠️ Observações
+**O site utiliza carregamento dinâmico (JavaScript), o que pode impactar a extração de alguns dados.
+A descrição do produto pode não estar sempre disponível ou pode variar dependendo da estrutura da página.**
+
+
 📁 Estrutura do projeto
 webscraper-netshoes/
-├── scraper.js
-├── package.json
-├── package-lock.json
-├── output.json
-├── README.md
-├── Print.png
-└── .gitignore
+<br>├── scraper.js
+<br>├── package.json
+<br>├── package-lock.json
+<br>├── output.json
+<br>├── README.md
+<br>├── Print.png
+<br>└── .gitignore<br>
 
-👨‍💻 Autor
 
-Desenvolvido por Fernanda
+### 👨‍💻 Autor
+
+**Desenvolvido por Fernanda Rosa**
